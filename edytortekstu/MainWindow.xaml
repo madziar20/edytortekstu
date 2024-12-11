@@ -1,0 +1,25 @@
+﻿<Window x:Class="edytortekstu.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:edytortekstu"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBox x:Name="tekst" HorizontalAlignment="Center" Margin="0,10,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="404" Height="162"/>
+        <Button x:Name="lewo" Content="lewo" HorizontalAlignment="Left" Margin="198,202,0,0" VerticalAlignment="Top" Width="69" Click="lewo_Click"/>
+        <Button x:Name="srodek" Content="srodek" HorizontalAlignment="Left" Margin="299,202,0,0" VerticalAlignment="Top" Width="69" RenderTransformOrigin="1.383,0.749" Click="srodek_Click"/>
+        <Button x:Name="prawo" Content="prawo" HorizontalAlignment="Left" Margin="534,202,0,0" VerticalAlignment="Top" Width="68" RenderTransformOrigin="1.392,-0.739" Click="prawo_Click"/>
+        <Button x:Name="justuj" Content="justuj" HorizontalAlignment="Left" Margin="419,202,0,0" VerticalAlignment="Top" Width="69" Click="justuj_Click"/>
+        <RadioButton x:Name="niebieski" Content="niebieski" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Checked="niebieski_Checked"/>
+        <RadioButton x:Name="fioletowy" Content="fioletowy" HorizontalAlignment="Left" Margin="10,30,0,0" VerticalAlignment="Top" Checked="fioletowy_Checked"/>
+        <RadioButton x:Name="czerwony" Content="czerwony" HorizontalAlignment="Left" Margin="10,50,0,0" VerticalAlignment="Top" Checked="czerwony_Checked"/>
+        <CheckBox x:Name="pogrub" Content="pogrub" HorizontalAlignment="Left" Margin="10,91,0,0" VerticalAlignment="Top" Checked="pogrub_Checked" Unchecked="pogrub_unChecked"/>
+        <CheckBox x:Name="podkresl" Content="podkresl" HorizontalAlignment="Left" Margin="10,111,0,0" VerticalAlignment="Top" Checked="podkresl_Checked" Unchecked="podkresl_unChecked"/>
+        <CheckBox x:Name="kursywa" Content="kursywa" HorizontalAlignment="Left" Margin="10,131,0,0" VerticalAlignment="Top" Checked="kursywa_Checked" Unchecked="kursywa_unChecked"/>
+        <Slider x:Name="rozmiarczcionki" HorizontalAlignment="Left" Margin="10,151,0,0" VerticalAlignment="Top" Width="30" RenderTransformOrigin="0.728,-0.206" Minimum="10" Maximum="100" Orientation="Vertical" Height="257" ValueChanged="rozmiarczcionki_ValueChanged"/>
+        <Label Content="rozmiar czcionki" HorizontalAlignment="Left" Margin="39,382,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
